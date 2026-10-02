@@ -46,7 +46,8 @@ select {
     padding-left: 18px;
     font-size: 16px;
     font-weight: 700;
-    color: #555555
+    color: #555555;
+    cursor: pointer;
 }
 
 
@@ -62,4 +63,27 @@ input {
     font-size: 16px;
     font-weight: 700;
     color: #555555 
+}
+
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+button:active {
+    opacity: 0.6;
 }
