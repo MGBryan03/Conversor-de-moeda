@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    outline: none;
 }
 
 
@@ -23,5 +24,27 @@ main {
     border-radius: 20px;
     background-color: #F4f4f4;
     margin: 0 auto;
-    padding: 44px 24px 23px 24px;
+    padding: 44px 24px 23px;
+}
+
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+select {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555
 }
