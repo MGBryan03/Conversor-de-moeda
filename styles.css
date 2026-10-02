@@ -14,8 +14,8 @@ body {
 
 .logo {
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 main {
