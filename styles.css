@@ -10,3 +10,10 @@
 body {
     background-color: #8A51FC;
 }
+
+
+main {
+    width: 375px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
