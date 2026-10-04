@@ -11,7 +11,27 @@ function convertValues() {
     const dolarToday = 5.21
     const euroToday = 5.87
 
-    const convertedValue = inputCurrencyValue / dolarToday
+
+    if(currencySelect.value == "dolar") {
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(inputCurrencyValue / dolarToday)
+    }
+
+    
+    if(currencySelect.value == "euro") {
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("fr-FR", {
+        style: "currency",
+        currency: "EUR"
+    }).format(inputCurrencyValue / euroToday)
+    }
+
+
+
+
+
+
 
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -19,10 +39,7 @@ function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD"
-    }).format(convertedValue)
+
 
     console.log(convertedValue)
 }
