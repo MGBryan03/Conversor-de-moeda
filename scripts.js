@@ -35,25 +35,24 @@ function convertValues() {
             style: "currency",
             currency: "GBP"
         }).format(inputCurrencyValue / libraToday)
-
-
-        if (currencySelect.value == "bitcoin") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-                style: "currency",
-                currency: "BTC"
-            }).format(inputCurrencyValue / bitcoinToday)
-        }
-
-        
-        currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        }).format(inputCurrencyValue)
-
-
-
-        console.log(convertedValue)
     }
 
-    convertButton.addEventListener("click", convertValues)
+    if (currencySelect.value == "bitcoin") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrencyValue / bitcoinToday)
+    }
+
+    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(inputCurrencyValue)
+
+
+
+    console.log(convertedValue)
+}
+
+convertButton.addEventListener("click", convertValues)
 
