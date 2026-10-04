@@ -11,6 +11,7 @@ function convertValues() {
     const dolarToday = 5.21
     const euroToday = 5.87
     const libraToday = 6.90
+    const bitcoinToday = 444518.91
 
 
     if (currencySelect.value == "dolar") {
@@ -28,7 +29,7 @@ function convertValues() {
         }).format(inputCurrencyValue / euroToday)
     }
 
-    
+
     if (currencySelect.value == "libra") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
             style: "currency",
@@ -36,10 +37,14 @@ function convertValues() {
         }).format(inputCurrencyValue / libraToday)
 
 
+        if (currencySelect.value == "bitcoin") {
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "BTC"
+            }).format(inputCurrencyValue / bitcoinToday)
+        }
 
-
-
-
+        
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
