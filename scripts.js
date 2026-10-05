@@ -48,11 +48,12 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
-
-
-
-    console.log(convertedValue)
 }
 
+function changeCurrency() {
+    console.log("trocou de moeda")
+}
+
+currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convertValues)
 
