@@ -52,21 +52,26 @@ function convertValues() {
 
 function changeCurrency() {
     const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector(".currency-image")
 
     if(currencySelect.value == "dolar") {
         currencyName.innerHTML = "Dólar americano"
+        currencyImage.src = "./assets/dolar.png"
     }
 
         if(currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
+        currencyImage.src = "./assets/euro.png"
     }
 
         if(currencySelect.value == "libra") {
         currencyName.innerHTML = "Libra"
+        currencyImage.src = "./assets/libra.png"
     }
 
     if(currencySelect.value == "bitcoin") {
         currencyName.innerHTML = "Bitcoin"
+        currencyImage.src = "./assets/bitcoin.png"
     }
 }
 
