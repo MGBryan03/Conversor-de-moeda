@@ -51,7 +51,23 @@ function convertValues() {
 }
 
 function changeCurrency() {
-    console.log("trocou de moeda")
+    const currencyName = document.getElementById("currency-name")
+
+    if(currencySelect.value == "dolar") {
+        currencyName.innerHTML = "Dólar americano"
+    }
+
+        if(currencySelect.value == "euro") {
+        currencyName.innerHTML = "Euro"
+    }
+
+        if(currencySelect.value == "libra") {
+        currencyName.innerHTML = "Libra"
+    }
+
+    if(currencySelect.value == "bitcoin") {
+        currencyName.innerHTML = "Bitcoin"
+    }
 }
 
 currencySelect.addEventListener("change", changeCurrency)
